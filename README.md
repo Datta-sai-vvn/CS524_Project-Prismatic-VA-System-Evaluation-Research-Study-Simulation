@@ -39,25 +39,7 @@ We implemented a minimal throwaway prototype with:
 
 4.  **Conclusion**: Standard SVG cannot support N=500. The breakdown happens swiftly after N=160. We must move to **Canvas or WebGL** for the main visualization layer to achieve 60 FPS at scale.
 
-## 3. Visual Validation
-
-### Small Scale (N=40)
-*Instant rendering.*
-![Matrix N=40](results/screenshots/matrix_n40.png)
-
-### Medium Scale (N=160)
-*Responsive, but DOM count is rising.*
-![Matrix N=160](results/screenshots/matrix_n160.png)
-
-### Large Scale (N=500)
-*Severe performance degradation.*
-![Matrix N=500](results/screenshots/matrix_n500.png)
-
-### Prism View (AAPL vs MSFT)
-*Specific pair deep-dive.*
-![Prism View](results/screenshots/prism_aapl_msft.png)
-
-## 4. Setup Instructions
+## 3. Setup Instructions
 
 1.  **Environment**:
     ```bash
