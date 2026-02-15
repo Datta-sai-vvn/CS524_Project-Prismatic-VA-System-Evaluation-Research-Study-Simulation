@@ -31,7 +31,7 @@ def get_sp500_tickers():
     tickers = [t.replace('.', '-') for t in tickers]
     return sorted(tickers)
 
-def fetch_prices(tickers, start='2019-12-01', end='2021-01-31'):
+def fetch_prices(tickers, start='2017-06-01', end='2021-06-30'):
     """
     Fetch adjusted close prices.
     We fetch a wider window than 2020 to have buffer for rolling calculations.

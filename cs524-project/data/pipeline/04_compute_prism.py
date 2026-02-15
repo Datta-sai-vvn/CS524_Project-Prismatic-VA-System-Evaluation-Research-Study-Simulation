@@ -16,7 +16,10 @@ YEAR = 2020
 
 # Demo pairs — pick 2 well-known S&P 500 stocks
 PAIRS = [
-    ('AAPL', 'MSFT'),
+    ('AAPL', 'MSFT'),     # Original pair (stock vs stock comparison — D3)
+    ('AAPL', 'XOM'),      # Stock vs Energy (Proxy for different sector)
+    ('GOOGL', 'AMZN'),    # Second stock pair — simulates D2
+    ('JPM', 'BAC'),       # Third stock pair — additional load
 ]
 
 MIN_WINDOW = 5  # Minimum window size for meaningful correlation
